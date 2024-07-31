@@ -17,9 +17,9 @@ def new_tic(add_on):
     print(tuple(add_on))
   
 
-def dispaly_manifest(manifest):
+def display_manifest(manifest):
     for index, task in enumerate(manifest):
-        print(f"Itnerary {index +1}: {task[0]} - From {task[1]} to {task[2]}")
+        print(f"Itinerary {index +1}: {task[0]} - From {task[1]} to {task[2]}")
     
 
 def flt_int():
@@ -27,7 +27,7 @@ def flt_int():
     flag = True
     while flag:
         ans = input ('''
-1- To add passerger information
+1- To add passenger information
 2- View manifest
 3- Quit
 
@@ -38,7 +38,7 @@ def flt_int():
            manifest_update = new_tic(manifest)
         elif ans == "2":
             print("Option 2 selected")
-            dispaly_manifest(manifest)
+            display_manifest(manifest)
         elif ans == "3":
             print('Exiting ticketing system...')
             break
